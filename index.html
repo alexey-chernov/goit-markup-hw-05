@@ -30,49 +30,42 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
-        <div class="header-nav">
-          <a class="logotype" href="./">
-            <span class="logotype-part1">Web</span
-            ><span class="logotype-part2">Studio</span>
+      <div class="container header">
+        <!--Навігація-->
+        <nav class="nav">
+          <a class="logo-text" href="index.html" rel="home" lang="en"
+            >Web<span class="top-logo-subtext">Studio</span>
           </a>
-          <div>
-            <ul class="nav-list">
-              <li>
-                <a href="./" class="nav-link current">Студия</a>
-              </li>
-              <li>
-                <a href="./portfolio.html" class="nav-link">Портфолио</a>
-              </li>
-              <li>
-                <a href="#Contacts" class="nav-link">Контакты</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <!-- Контакти -->
-            <ul class="contacts-list">
-              <li>
-                <object
-                  data="./images/icons/mail.svg"
-                  type="image/svg+xml"
-                  width="16"
-                  height="12"
-                ></object>
-                <a href="info@devstudio.com">info@devstudio.com</a>
-              </li>
-              <li>
-                <object
-                  data="./images/icons/phone.svg"
-                  type="image/svg+xml"
-                  width="16"
-                  height="12"
-                ></object>
-                <a href="tel:380961111111">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+
+          <ul class="nav-items">
+            <li class="active">
+              <a class="nav-item" href="./index.html">Студия</a>
+            </li>
+            <li><a class="nav-item" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="nav-item" href="#Contacts">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <ul class="header-contacts">
+          <li>
+            <object
+              data="./images/icons/mail.svg"
+              type="image/svg+xml"
+              width="16"
+              height="12"
+            ></object>
+            <a href="info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li>
+            <object
+              data="./images/icons/phone.svg"
+              type="image/svg+xml"
+              width="16"
+              height="12"
+            ></object>
+            <a href="tel:380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -173,129 +166,201 @@
     </div>
 
     <!-- Наша команда -->
-    <div class="working-command-section">
-      <div>
-        <h2 class="working-command-title">Наша комманда</h2>
+    <section class="team-members">
+      <h2 class="secondary-title">Наша команда</h2>
+      <div class="container">
+        <ul class="team-members-ul">
+          <li class="team-members-li">
+            <div class="member-img-thumb">
+              <img src="images/img(4).jpg" alt="член команды" />
+            </div>
+            <div class="member-info">
+              <h3 class="team-member-name">Игорь Демьяненко</h3>
+              <p class="team-member-position" lang="en">Product Designer</p>
+              <ul class="social-links-ul">
+                <li class="social-links-li">
+                  <a class="social-link" href="#">
+                    <div class="social-link-wrapper">
+                      <svg class="social-link-svg" width="44" height="44">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-links-li">
+                  <a class="social-link" href="#">
+                    <div class="social-link-wrapper">
+                      <svg class="social-link-svg" width="44" height="44">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-links-li">
+                  <a class="social-link" href="#">
+                    <div class="social-link-wrapper">
+                      <svg class="social-link-svg" width="44" height="44">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-links-li">
+                  <a class="social-link" href="#">
+                    <div class="social-link-wrapper">
+                      <svg class="social-link-svg" width="44" height="44">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="team-members-li">
+            <div class="member-img-thumb">
+              <img src="images/img(5).jpg" alt="член команды" />
+            </div>
+            <div class="member-info">
+              <h3 class="team-member-name">Ольга Репина</h3>
+              <p class="team-member-position" lang="en">Frontend Developer</p>
+              <ul class="social-links-ul">
+                <li class="social-links-li">
+                  <a class="social-link" href="#">
+                    <div class="social-link-wrapper">
+                      <svg class="social-link-svg" width="44" height="44">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-links-li">
+                  <a class="social-link" href="#">
+                    <div class="social-link-wrapper">
+                      <svg class="social-link-svg" width="44" height="44">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-links-li">
+                  <a class="social-link" href="#">
+                    <div class="social-link-wrapper">
+                      <svg class="social-link-svg" width="44" height="44">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-links-li">
+                  <a class="social-link" href="#">
+                    <div class="social-link-wrapper">
+                      <svg class="social-link-svg" width="44" height="44">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="team-members-li">
+            <div class="member-img-thumb">
+              <img src="images/img(6).jpg" alt="член команды" />
+            </div>
+            <div class="member-info">
+              <h3 class="team-member-name">Николай Тарасов</h3>
+              <p class="team-member-position" lang="en">Marketing</p>
+              <ul class="social-links-ul">
+                <li class="social-links-li">
+                  <a class="social-link" href="#">
+                    <div class="social-link-wrapper">
+                      <svg class="social-link-svg" width="44" height="44">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-links-li">
+                  <a class="social-link" href="#">
+                    <div class="social-link-wrapper">
+                      <svg class="social-link-svg" width="44" height="44">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-links-li">
+                  <a class="social-link" href="#">
+                    <div class="social-link-wrapper">
+                      <svg class="social-link-svg" width="44" height="44">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-links-li">
+                  <a class="social-link" href="#">
+                    <div class="social-link-wrapper">
+                      <svg class="social-link-svg" width="44" height="44">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="team-members-li">
+            <div class="member-img-thumb">
+              <img src="images/img(7).jpg" alt="член команды" />
+            </div>
+            <div class="member-info">
+              <h3 class="team-member-name">Михаил Ермаков</h3>
+              <p class="team-member-position" lang="en">UI Designer</p>
+              <ul class="social-links-ul">
+                <li class="social-links-li">
+                  <a class="social-link" href="#">
+                    <div class="social-link-wrapper">
+                      <svg class="social-link-svg" width="44" height="44">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-links-li">
+                  <a class="social-link" href="#">
+                    <div class="social-link-wrapper">
+                      <svg class="social-link-svg" width="44" height="44">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-links-li">
+                  <a class="social-link" href="#">
+                    <div class="social-link-wrapper">
+                      <svg class="social-link-svg" width="44" height="44">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="social-links-li">
+                  <a class="social-link" href="#">
+                    <div class="social-link-wrapper">
+                      <svg class="social-link-svg" width="44" height="44">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
       </div>
-      <ul class="ourcommand">
-        <li class="ourcommand-card">
-          <img src="./images/Card1.jpg" alt="Игорь Демьяненко" />
-          <div class="ourcommand-names">Игорь Демьяненко</div>
-          <p class="ourcommand-profi">Product Designer</p>
-          <div>
-            <ul class="socialnetworks-links">
-              <li class="socialnetworks-item">
-                <a href="./">
-                  <img src="./images/icons/social-instagram.svg" alt="" />
-                </a>
-              </li>
-              <li class="socialnetworks-item">
-                <a href="./">
-                  <img src="./images/icons/social-twitter.svg" alt="" />
-                </a>
-              </li>
-              <li class="socialnetworks-item">
-                <a href="./">
-                  <img src="./images/icons/social-facebook.svg" alt="" />
-                </a>
-              </li>
-              <li class="socialnetworks-item">
-                <a href="./">
-                  <img src="./images/icons/social-linkedin.svg" alt="" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="ourcommand-card">
-          <img src="./images/Card2.jpg" alt="Ольга Репина" />
-          <div class="ourcommand-names">Ольга Репина</div>
-          <p class="ourcommand-profi">Frontend Developer</p>
-          <div>
-            <ul class="socialnetworks-links">
-              <li class="socialnetworks-item">
-                <a href="./">
-                  <img src="./images/icons/social-instagram.svg" alt="" />
-                </a>
-              </li>
-              <li class="socialnetworks-item">
-                <a href="./">
-                  <img src="./images/icons/social-twitter.svg" alt="" />
-                </a>
-              </li>
-              <li class="socialnetworks-item">
-                <a href="./">
-                  <img src="./images/icons/social-facebook.svg" alt="" />
-                </a>
-              </li>
-              <li class="socialnetworks-item">
-                <a href="./">
-                  <img src="./images/icons/social-linkedin.svg" alt="" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="ourcommand-card">
-          <img src="./images/Card3.jpg" alt="Николай Тарасов" />
-          <div class="ourcommand-names">Николай Тарасов</div>
-          <p class="ourcommand-profi">Marketing</p>
-          <div>
-            <ul class="socialnetworks-links">
-              <li class="socialnetworks-item">
-                <a href="./">
-                  <img src="./images/icons/social-instagram.svg" alt="" />
-                </a>
-              </li>
-              <li class="socialnetworks-item">
-                <a href="./">
-                  <img src="./images/icons/social-twitter.svg" alt="" />
-                </a>
-              </li>
-              <li class="socialnetworks-item">
-                <a href="./">
-                  <img src="./images/icons/social-facebook.svg" alt="" />
-                </a>
-              </li>
-              <li class="socialnetworks-item">
-                <a href="./">
-                  <img src="./images/icons/social-linkedin.svg" alt="" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="ourcommand-card">
-          <img src="./images/Card4.jpg" alt="Михаил Ермаков" />
-          <div class="ourcommand-names">Михаил Ермаков</div>
-          <p class="ourcommand-profi">UI Designer</p>
-          <div>
-            <ul class="socialnetworks-links">
-              <li class="socialnetworks-item">
-                <a href="./">
-                  <img src="./images/icons/social-instagram.svg" alt="" />
-                </a>
-              </li>
-              <li class="socialnetworks-item">
-                <a href="./">
-                  <img src="./images/icons/social-twitter.svg" alt="" />
-                </a>
-              </li>
-              <li class="socialnetworks-item">
-                <a href="./">
-                  <img src="./images/icons/social-facebook.svg" alt="" />
-                </a>
-              </li>
-              <li class="socialnetworks-item">
-                <a href="./">
-                  <img src="./images/icons/social-linkedin.svg" alt="" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </div>
+    </section>
 
     <!-- Постійні клієнти -->
     <div class="working-command-section">
