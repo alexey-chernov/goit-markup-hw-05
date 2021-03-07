@@ -81,7 +81,7 @@ body {
 .header {
   display: flex;
   align-items: center;
-  width: 1200px;
+  /*width: 100%;*/
   min-height: 80px;
   margin: auto;
   padding: 0 15px;
@@ -194,25 +194,23 @@ li.active > a {
 /*-------------------*/
 
 .divlogo {
-  position: absolute;
+  /*position: absolute;*/
   width: 100%;
 }
 
 .hero {
   padding-bottom: 94px;
-  width: 1600px;
+  /*width: 100%;*/
   height: 600px;
   left: 0px;
   top: 80px;
-  max-width: 1600px;
+  /*max-width: 1600px;*/
 }
 
 .hero-title {
   position: absolute;
   padding-top: 100px;
   padding-bottom: 200px;
-  padding-left: 452px;
-  padding-right: 452px;
   width: 696px;
   height: 120px;
   top: 50%;
