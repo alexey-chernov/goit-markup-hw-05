@@ -22,20 +22,21 @@
   --social-background-main-color: #fff; /*цвет фона социальной сети неактивный #FFFFFF */
   --social-background-footer-color: rgba(255, 255, 255, 0.1);
   --blue-color: #2196f3;
+
+  --standart-15px: 15px;
+  --standart-30px: 30px;
+  --standart-50px: 50px;
+  --standart-94px: 94px;
 }
 
---standart-15px: 15px;
---standart-30px: 30px;
---standart-50px: 50px;
---standart-94px: 94px;
-
-:focus {
+.focus {
   outline: none;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
+  margin: 0;
 }
 
 /* ------------------ */
@@ -44,11 +45,11 @@ body {
 }
 
 .container {
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
 }
 
 .logo-text {
@@ -209,8 +210,6 @@ li.active > a {
 
 .hero-title {
   position: absolute;
-  padding-top: 100px;
-  padding-bottom: 200px;
   width: 696px;
   height: 120px;
   top: 50%;
@@ -230,7 +229,7 @@ li.active > a {
   margin-top: 40px;
   width: 200px;
   height: 50px;
-  top: 55%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffffff;
@@ -431,8 +430,8 @@ li.active > a {
 
 /* Постійні клієнти */
 .clients-section {
+  padding-top: 94px;
   display: block;
-  width: 100%;
 }
 
 .clients-title {
@@ -454,9 +453,9 @@ li.active > a {
 }
 
 .clients-item {
-  margin-top: var(--standart-50px);
-  background: var(--white-color);
-  border: 1px solid var(--grey-color);
+  margin-top: 50px;
+  background: #ffffff;
+  border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
   max-width: 210px;
@@ -467,13 +466,13 @@ li.active > a {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--passive-background-color);
+  color: #afb1b8;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item:not(:last-child) {
-  margin-right: var(--standart-30px);
+  margin-right: 15px;
 }
 
 .clients-item:hover {
@@ -551,7 +550,7 @@ li.active > a {
 }
 
 .address-block {
-  color: rgba(ff, ff, ff, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .link-email-footer {
@@ -718,7 +717,7 @@ li.active > a {
   top: 0;
   width: 100%;
   z-index: 1;
-  border-bottom: 1px solid var(--white-back-color);
+  border-bottom: 1px solid #ffffff;
 }
 
 .backdrop.is-hidden {
@@ -861,6 +860,14 @@ li.active > a {
   list-style-type: none;
   display: inline-flex;
   justify-content: space-between;
+}
+
+.social li {
+  margin: 5px;
+}
+
+.social li:not(:last-child) {
+  margin-right: 0px;
 }
 
 .social-button {
