@@ -76,7 +76,7 @@ body {
   background-color: white;
   width: 100%;
   z-index: 1;
-  border-bottom: 1px solid var(--white-back-color);
+  border-bottom: 1px solid #ececec;
 }
 
 .header {
@@ -575,7 +575,7 @@ li.active > a {
 }
 
 .link-portfolio-menu {
-  background: var(--light-grey-color);
+  background: transparent;
   color: var(--main-text-color);
   font-size: small;
   align-self: auto;
@@ -607,7 +607,6 @@ li.active > a {
 }
 
 .portfolio-photo {
-  /*left: 615px;*/
   top: 262px;
   display: inline-table;
   margin-top: 15px;
